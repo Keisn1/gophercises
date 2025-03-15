@@ -1,1 +1,4 @@
 *.sum
+/phone2/instance/
+/task/instance/
+/urlshort/instance/test.sqlite

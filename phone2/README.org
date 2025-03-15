@@ -1,0 +1,11 @@
+#+title: Readme
+
+1. Write db.Delete(nbr string)
+   - delete all the numbers equal to nbr
+2. Write code to iterate over entries
+3. db.Get(nbr string)
+   - gets nbr or not existant
+4. Write db.Update (numberId int)
+5. Write phone.Update
+   -
+   - and Delete

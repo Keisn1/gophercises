@@ -1,0 +1,50 @@
+#+title: Sql Statements
+
+* Create Table
+#+begin_src sqlite :db instance/db.sqlite :colnames yes
+drop table if exists 'phoneNumbers';
+
+create table phoneNumbers (
+  'numberId' integer primary key autoincrement,
+  'phoneNumber' text not null
+);
+#+end_src
+#+RESULTS:
+
+* Insert Data
+#+begin_src sqlite :db instance/db.sqlite :colnames yes
+insert into phoneNumbers (phoneNumber) values
+            ('(123)456-7892'),
+            ('1234567892');
+#+end_src
+
+#+RESULTS:
+
+* Get data
+#+begin_src sqlite :db instance/db.sqlite :colnames yes
+select numberId, phoneNumber from phoneNumbers;
+#+end_src
+
+#+RESULTS:
+| numberId | phoneNumber |
+|----------+-------------|
+|        1 |  1234567890 |
+|        2 |  1234567891 |
+|        4 |  1234567893 |
+|        5 |  1234567894 |
+|        7 |  1234567892 |
+* Delete number
+#+begin_src sqlite :db instance/db.sqlite :colnames yes
+delete from phoneNumbers where phoneNumber = 1234567890;
+#+end_src
+
+#+RESULTS:
+* Update number
+#+begin_src sqlite :db instance/db.sqlite :colnames yes
+update phoneNumbers
+set phoneNumber = 0987654321
+where
+numberId = 1;
+#+end_src
+
+#+RESULTS:
