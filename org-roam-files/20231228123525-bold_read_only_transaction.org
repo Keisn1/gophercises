@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       c6fb43e2-7a41-4d05-8899-e5cf8616f4d3
+:END:
+#+title: Bold read-only transaction
+#+date: [2023-12-28 Thu 12:35]
+#+startup: overview
+
+- ~db.View~
+- consistent
+- no mutating allowed
+- retrieve values, retrieve buckets, copy database
+
+#+begin_src go :results output :imports "fmt"
+err := db.View(func(tx *bolt.Tx) error {
+	...
+	return nil
+})
+#+end_src

@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       3ce25169-c366-46c3-9156-acad9b54b302
+:END:
+#+title: exercise5 sitemap
+#+date: [2023-12-26 Tue 16:38]
+#+startup: overview
+
+Build a sitemap
+
+- main in cmd/build_sitemap
+  - add a flag
+- [[id:4037c1d6-f49d-4952-8bcd-d1c6518d0aff][GET request with net/http]]
+- use link parser from previous exercise
+  - parse links of response body
+  - only take links that are on the same domain
+    - / at a start (path link)
+      - probably test them by setting the domain
+    - https at start
+    - skip other links
+      - might find mailto links
+      - fragment links
+
+- [[id:ea8ff2ba-dc48-4521-8732-bc0a048b0ed1][create an xml]]
+
+- follow all the links
+- be aware that links can be cyclical
+- be also aware of redirects
+- helpful packages
+  - net/http (initiate GET requests)
+  - encoding xml
+  - link package from previous exercise
+
+
+
+
+- Bonus:
+  - add depth flag

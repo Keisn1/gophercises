@@ -1,0 +1,56 @@
+:PROPERTIES:
+:ID:       96672e90-b26a-4664-b7b8-9f75bc52639e
+:END:
+#+title: http handler
+#+date: [2023-12-17 Sun 17:24]
+#+startup: overview
+
+- an object implementing the http.handler interface
+#+begin_src go :results output :imports "fmt"
+type Handler interface {
+	ServeHTTP(ResponseWriter, *Request)
+}
+#+end_src
+
+- common way to create a Handler is to use [[id:638bb69a-54d3-461a-8c38-d79b0cc46bd2][http handlerFunc]]
+- other way is to implement this on our own
+- use [[id:11f7ddb4-5ffd-4054-8db2-9a6fde159534][http Handle]] http.Handle to register
+
+#+begin_src go :results output :imports "fmt"
+type helloWorldHandler struct
+
+func (h helloWorldHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "Hello World!")
+}
+
+
+http.Handle("/helloWorld", helloWorldHandler)
+#+end_src
+
+#+begin_src go :results output
+package main
+
+import (
+	"fmt"
+	"log"
+	"net/http"
+	"sync"
+)
+
+type countHandler struct {
+	mu sync.Mutex // guards n
+	n  int
+}
+
+func (h *countHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	h.mu.Lock()
+	defer h.mu.Unlock()
+	h.n++
+	fmt.Fprintf(w, "count is %d\n", h.n)
+}
+
+func main() {
+	http.Handle("/count", new(countHandler))
+	log.Fatal(http.ListenAndServe(":8080", nil))
+}
+#+end_src

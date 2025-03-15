@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       853c7cd6-46a1-4db2-901e-7339096c3d05
+:END:
+#+title: Bolt read write transaction
+#+date: [2023-12-28 Thu 12:31]
+#+startup: overview
+
+~db.Update~
+- inside the closure, you have a persistent view of the database
+- commiting by returning nil
+- rollback by returning an error
+- all database operations are allowed inside a read-write transaction
+- always check the return error
+- errors returned inside closure are passed through
+
+#+begin_src go :results output :imports "fmt"
+err := db.Update(func(tx *bolt.Tx) error {
+	...
+	return nil
+})
+#+end_src

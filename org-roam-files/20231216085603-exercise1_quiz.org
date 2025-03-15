@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       dc49b237-c85f-4588-a48b-c98958f67632
+:END:
+#+title: Exercise1 quiz
+#+date: [2023-12-16 Sat 08:56]
+#+startup: overview
+
+- every question is put into a goroutine
+- after launching the go routine, we put a select statement that listens to two channels
+  - the answerCh which is piped to the go routine that was launched
+  - the timeout Timer channel that was created earlier

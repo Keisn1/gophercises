@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       88d85869-96a6-4257-be68-572603c0455b
+:END:
+#+title: Header
+#+date: [2023-12-16 Sat 11:03]
+#+startup: overview
+
+Type in [[id:b5601009-f76f-428c-a67e-27e0024fb193][http package]]
+#+begin_src go :results output :imports "fmt"
+map[string][]string
+#+end_src
+- represents key, value pair in http header

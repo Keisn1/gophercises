@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       1ebf0917-a6c1-4e30-a263-f8680ac84898
+:END:
+#+title: CLI
+#+date: [2023-12-27 Wed 20:28]
+#+startup: overview
+
+https://github.com/avelino/awesome-go#command-line
+- he we will use cobra
+- can also use something more cool like bubbletea (uses ELM architecture)

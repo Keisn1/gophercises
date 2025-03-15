@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       9cd936cd-0908-4ba7-8d29-31d917bfea15
+:END:
+#+title: YamlHandler
+#+date: [2023-12-16 Sat 19:43]
+#+startup: overview
+
+Handles Yaml redirection data

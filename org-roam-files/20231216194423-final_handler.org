@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       3cb36ffe-328b-40d3-a41e-7629fee2d6d4
+:END:
+#+title: Final Handler
+#+date: [2023-12-16 Sat 19:44]
+#+startup: overview
+
+we can take the handler that we had before and add them as fallback for the new handlers
+Creates a handler chain
+#+begin_src go :results output :imports "fmt"
+
+mapHandler := urlshort.MapHandler(pathsToUrls, mux)
+// Build the YAMLHandler using the mapHandler as the
+// fallback
+handler, err := urlshort.Handler(data, mapHandler, flag)
+
+// other file
+func Handler(input []byte, fallback http.Handler, flag *string) (http.HandlerFunc, error) {
+#+end_src

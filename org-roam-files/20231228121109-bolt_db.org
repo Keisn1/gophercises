@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       814c5bea-0783-4e38-98b6-62b8d7aad5b9
+:END:
+#+title: Bolt db
+#+date: [2023-12-28 Thu 12:11]
+#+startup: overview
+
+stale: https://github.com/boltdb/bolt
+fork: https://github.com/etcd-io/bbolt
+- key-value store
+- as many read-only-transactions as one would like at a time
+- only one read-write-transaction at a time
+- individual transactions are not thread-safe
+  - use locking to ensure only one go routine accesses a transaction
+- Creating transaction from the DB is thread-safe
+- read-only and read-write-transactions should not be in the same goroutine
+
+* Installation
+* [[id:853c7cd6-46a1-4db2-901e-7339096c3d05][Bolt read write transaction]]
+* [[id:c6fb43e2-7a41-4d05-8899-e5cf8616f4d3][Bold read-only transaction]]
+* [[id:c9ec46a8-0987-4849-8583-25010f3fffce][Buckets]]

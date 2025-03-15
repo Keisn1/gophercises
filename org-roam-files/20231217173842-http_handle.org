@@ -1,0 +1,42 @@
+:PROPERTIES:
+:ID:       11f7ddb4-5ffd-4054-8db2-9a6fde159534
+:END:
+#+title: http Handle
+#+date: [2023-12-17 Sun 17:38]
+#+startup: overview
+
+https://pkg.go.dev/net/http#Handle
+- signature
+#+begin_src go
+func Handle(pattern string, handler Handler)
+#+end_src
+
+- example
+  #+begin_src go :results output :imports "fmt"
+package main
+
+import (
+	"fmt"
+	"log"
+	"net/http"
+	"sync"
+)
+
+type countHandler struct {
+	mu sync.Mutex // guards n
+	n  int
+}
+
+func (h *countHandler) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	h.mu.Lock()
+	defer h.mu.Unlock()
+	h.n++
+	fmt.Fprintf(w, "count is %d\n", h.n)
+}
+
+func main() {
+	http.Handle("/count", new(countHandler))
+	log.Fatal(http.ListenAndServe(":8080", nil))
+}
+
+  #+end_src

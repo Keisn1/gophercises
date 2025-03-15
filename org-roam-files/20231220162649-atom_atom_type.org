@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       407329db-acb7-4c6d-ab27-c0055d9a6d89
+:END:
+#+title: atom Atom type
+#+date: [2023-12-20 Wed 16:26]
+#+startup: overview
+
+https://pkg.go.dev/golang.org/x/net@v0.19.0/html/atom#Atom

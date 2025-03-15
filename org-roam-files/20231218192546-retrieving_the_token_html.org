@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       5811ff30-82d0-4e56-b380-1e41bea694d6
+:END:
+#+title: Retrieving the token (html)
+#+date: [2023-12-18 Mon 19:25]
+#+startup: overview
+
+
+* Order of allowed retrieval
+Next {Raw} [ Token | Text | TagName {TagAttr}]
+
+* Retrieving Token via Raw
+* [[id:ffd58ab4-dc6b-49e4-968b-19499fef6e52][Retrieving Token via Token]]
+* Retrieving Token via Text
+* Retrieving Token via TagName/TagAttr

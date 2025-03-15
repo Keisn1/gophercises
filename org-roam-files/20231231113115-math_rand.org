@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       05724c68-6c57-416a-905d-a3e9d16c2565
+:END:
+#+title: math/rand
+#+date: [2023-12-31 Sun 11:31]
+#+startup: overview

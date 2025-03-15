@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       c652d66b-db74-4fb6-a27a-2caf3ee8072a
+:END:
+#+title: Save a key value pair
+#+date: [2023-12-28 Thu 12:41]
+#+startup: overview
+
+- setting value of "answer" key to 42
+
+#+begin_src go :results output :imports "fmt"
+db.Update(func(tx *bolt.Tx) error {
+	b := tx.Bucket([]byte("MyBucket"))
+	err := b.Put([]byte("answer"), []byte("42"))
+	return err
+})
+#+end_src

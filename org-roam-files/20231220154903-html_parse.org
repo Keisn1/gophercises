@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       42654313-1f67-4c02-ad04-17a1f7b67403
+:END:
+#+title: html parse
+#+date: [2023-12-20 Wed 15:49]
+#+startup: overview
+
+- call ~html.parse~ with an ~io.Reader~
+- returns root of parse tree (*Node) [[id:a217f975-0585-4087-9380-d985db7688e9][html node type]]
+- callers need to ensure that Reader provides UTF-8
+
+#+begin_src go :results output :imports "fmt"
+doc, err := html.Parse(r)
+if err != nil {
+	// ...
+}
+var f func(*html.Node)
+f = func(n *html.Node) {
+	if n.Type == html.ElementNode && n.Data == "a" {
+		// Do something with n...
+	}
+	for c := n.FirstChild; c != nil; c = c.NextSibling {
+		f(c)
+	}
+}
+f(doc)
+#+end_src

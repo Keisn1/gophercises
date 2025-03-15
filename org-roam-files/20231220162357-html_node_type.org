@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       a217f975-0585-4087-9380-d985db7688e9
+:END:
+#+title: html node type
+#+date: [2023-12-20 Wed 16:23]
+#+startup: overview
+
+#+begin_src go :results output :imports "fmt"
+type Node struct {
+	Parent, FirstChild, LastChild, PrevSibling, NextSibling *Node
+
+	Type      NodeType
+	DataAtom  atom.Atom
+	Data      string
+	Namespace string
+	Attr      []Attribute
+}
+#+end_src
+
+
+* dataAtom
+[[id:407329db-acb7-4c6d-ab27-c0055d9a6d89][atom Atom type]]
+* data
+- unescaped ("a<b" is "a&lt;b")
+** tag name for element nodes
+** content for text
+* [[id:d7e562ba-c194-4059-808b-1d2d12d8acac][html attribute]]

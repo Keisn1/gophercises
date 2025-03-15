@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       ffb519d1-06e3-44c5-a187-00dc75c0fc68
+:END:
+#+title: Functional options with go
+#+date: [2023-12-31 Sun 11:35]
+#+startup: overview

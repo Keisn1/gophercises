@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       5315c842-fde9-4f12-aaa3-4c079e2770c4
+:END:
+#+title: Exercise2 URLShortener
+#+date: [2023-12-16 Sat 08:57]
+#+startup: overview
+
+* What to do
+- determine if it should redirect the user to a new page
+- order
+  1. YamlPath
+  2. MapPath
+  3. DefaultMux
+
+- first comment out YamlHandler, and focus on MapHandler
+
+- using https://pkg.go.dev/gopkg.in/yaml.v2, focus then on YamlHandler
+
+- convert data into a map
+
+- finish YAMLHandler implementation with the MapHandler
+  1. Parse Yaml
+  2. buildMap
+  3. send pathMap to MapHandler
+
+* Bonus
+1. Put a flag to accept a YAML file as a flag
+2. Build a json handler that serves the same purpose
+3. Build a handler that reads from database
+   - BoldDB, SQL, or something else
+* Elements
+** [[id:7220a00f-cf2f-4fc2-a9b9-099d9790c221][MapHandler]]
+** [[id:9cd936cd-0908-4ba7-8d29-31d917bfea15][YamlHandler]]
+** [[id:3cb36ffe-328b-40d3-a41e-7629fee2d6d4][Final Handler]]
+
+** [[id:adbd7437-b15a-42ec-ad4a-2a27e74686e8][Yaml parsing]]

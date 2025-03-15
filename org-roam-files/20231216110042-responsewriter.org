@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       9db1460f-c949-4ccc-b76c-2d15bc6879e4
+:END:
+#+title: ResponseWriter
+#+date: [2023-12-16 Sat 11:00]
+#+startup: overview
+
+https://pkg.go.dev/net/http#ResponseWriter
+
+- used to fill in the HTTP response
+- interface
+- implements
+  - Header() [[id:88d85869-96a6-4257-be68-572603c0455b][Header]]
+  - Write([]byte)  (int, error)
+    - writes data to the connection as part of an HTTP reply
+
+  - WriteResponse(statusCorde int)
+    - sends the Header with status code

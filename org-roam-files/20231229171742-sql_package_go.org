@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       df6c9d48-2154-47a3-90cd-fe3af2ba0428
+:END:
+#+title: Sql package go
+#+date: [2023-12-29 Fri 17:17]
+#+startup: overview
+
+[[https://pkg.go.dev/database/sql][sql package go]]
+requires a DB driver https://go.dev/wiki/SQLDrivers
+* Create a Database

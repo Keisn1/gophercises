@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       2efa2956-c786-4f68-a813-27bb0b077afd
+:END:
+#+title: cobra cli package
+#+date: [2023-12-28 Thu 10:35]
+#+startup: overview
+
+~APPNAME VERB NOUN --ADJECTIVE~
+~APPNAME COMMAND ARG --FLAG~
+* [[id:25c4f314-0859-45c2-9128-d64842a17653][Commands]]
+* [[id:06ee9618-b921-4595-8f2e-0210abfa0c68][Args]]
+* [[id:326e369e-df62-4a90-bdd8-88c4f3722176][Flags]]
+* [[id:1f600000-da73-4929-90aa-4b4f08ab4290][Cobra cli generator]]
+* [[id:dc548b9f-2850-449a-aa96-cab6f2ba891a][Cobra user guide]]

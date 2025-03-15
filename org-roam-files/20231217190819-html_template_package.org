@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       a207d7e5-f1e3-404f-b1b5-709f1e3b160c
+:END:
+#+title: html/template package
+#+date: [2023-12-17 Sun 19:08]
+#+startup: overview
+
+
+https://pkg.go.dev/html/template
+- Wraps [[id:062808bc-a2f0-49c9-a5b3-9be9953284fc][text/template]]

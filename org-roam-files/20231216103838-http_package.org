@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       b5601009-f76f-428c-a67e-27e0024fb193
+:END:
+#+title: http package
+#+date: [2023-12-16 Sat 10:38]
+#+startup: overview
+
+https://pkg.go.dev/net/http
+https://gobyexample.com/http-servers
+
+* [[id:638bb69a-54d3-461a-8c38-d79b0cc46bd2][http handlerFunc]]
+* [[id:96672e90-b26a-4664-b7b8-9f75bc52639e][http handler]]

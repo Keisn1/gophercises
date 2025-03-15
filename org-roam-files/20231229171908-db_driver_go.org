@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       66e7fe5b-0884-4b62-abcb-e43cd57f9334
+:END:
+#+title: DB driver go
+#+date: [2023-12-29 Fri 17:19]
+#+startup: overview
+
+https://go.dev/wiki/SQLDrivers
+- Drivers that do not support context cancellation will not return until after the query is completed.
+- usage examples
+  - https://go.dev/wiki/SQLInterface
+
+* Sqlite
+** [[id:c5705a16-b889-4cfa-a1fe-2a99a570efb2][go-sqlite3]]
+* From the video
+- weird import
+  https://www.calhoun.io/why-we-import-sql-drivers-with-the-blank-identifier/
+  - init function inside that driver package calls sql.Register("postgres", "pq.drv")
+  - importing makes it actually run

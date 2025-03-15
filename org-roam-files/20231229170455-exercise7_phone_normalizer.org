@@ -1,0 +1,40 @@
+:PROPERTIES:
+:ID:       5496edd4-28e4-465f-ba2a-05c506af940d
+:END:
+#+title: exercise7 phone normalizer
+#+date: [2023-12-29 Fri 17:04]
+#+startup: overview
+
+- normalizing dater
+  - get everything into the same format
+- creating a database
+- test the stuff as well
+
+https://go.dev/wiki/SQLInterface
+https://arjanvandergaag.nl/blog/using-emacs-as-a-database-client.html
+* PostgreSql
+- https://www.calhoun.io/using-postgresql-with-go/
+- https://www.calhoun.io/connecting-to-a-postgresql-database-with-gos-database-sql-package/
+https://wiki.archlinux.org/title/PostgreSQL
+- https://wiki.archlinux.org/title/PostgreSQL#Initial_configuration
+- https://wiki.archlinux.org/title/PostgreSQL#Create_your_first_database/user
+- for the dbConn to PostgreSQL you would actually need to verify (not included in the error) via dbConn.Ping()
+- https://wiki.archlinux.org/title/PostgreSQL#Graphical_tools
+- https://arjanvandergaag.nl/blog/using-emacs-as-a-database-client.html
+** specific issues
+*** not Returning id
+- unlike most sql dbs, postgresql doesn't return lastInserted ids automatically
+  - would need to add e.g. "RETURNING id"
+*** rather work with QueryRow rather than Exec
+* driver and SQL usage
+- depending on driver, placeholders are differentf
+  - $1 $2 ... PostgreSQL
+  - ? ? ... SQLite
+- https://pkg.go.dev/database/sql#pkg-index
+
+* Database packages
+- https://go.dev/wiki/SQLDrivers
+- https://github.com/mattn/go-sqlite3/tree/master/_example
+- [[https://pkg.go.dev/database/sql][sql package go]]
+- [[https://github.com/jmoiron/sqlx][sqlx]]
+- [[https://github.com/jinzhu/gorm][gorm]]

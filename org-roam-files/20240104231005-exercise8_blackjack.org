@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       95790960-d9e3-4ceb-90aa-10b0b41633cc
+:END:
+#+title: exercise8 blackjack
+#+date: [2024-01-04 Thu 23:10]
+#+startup: overview
+
+- Every player is dealt 2 cards
+- Going in rounds
+- Dealer has only one visible card
+- all player cards are visible
+- Hit or Stand as options for players
+  - hit: new card
+    - then again choose
+  - stand:
+    - turn over
+
+* First version
+- only 2 players, dealer and human
+- dealing until all players have 2 cards
+- dealer has only one visible card, other card is face down
+- all player cards are visible

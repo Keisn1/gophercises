@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       c9ec46a8-0987-4849-8583-25010f3fffce
+:END:
+#+title: Buckets
+#+date: [2023-12-28 Thu 12:39]
+#+startup: overview
+
+- collections of key/value pairs
+- keys in a bucket must be unique
+~DB.CreateBucket()~
+~DB.CreateBucketIfNotExists()~
+~DB.DeleteBucket()~
+
+
+[[id:c652d66b-db74-4fb6-a27a-2caf3ee8072a][Save a key value pair]]

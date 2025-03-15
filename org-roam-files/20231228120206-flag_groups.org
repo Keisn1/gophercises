@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       087de7f3-b464-4ab3-a51a-782740e7df33
+:END:
+#+title: Flag groups
+#+date: [2023-12-28 Thu 12:02]
+#+startup: overview
+
+Flags that need to be provided together

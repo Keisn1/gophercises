@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       25c4f314-0859-45c2-9128-d64842a17653
+:END:
+#+title: Commands
+#+date: [2023-12-28 Thu 10:36]
+#+startup: overview
+
+- represent actions
+- each interaction that the app supports will be contained inside a command
+https://pkg.go.dev/github.com/spf13/cobra#Command

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       d7e562ba-c194-4059-808b-1d2d12d8acac
+:END:
+#+title: html attribute
+#+date: [2023-12-20 Wed 19:09]
+#+startup: overview
+
+https://pkg.go.dev/golang.org/x/net/html#Attribute
+#+begin_src go :results output :imports "fmt"
+type Attribute struct {
+	Namespace, Key, Val string
+}
+#+end_src

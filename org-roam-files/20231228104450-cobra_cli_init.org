@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       73eca31f-23fd-4592-bd55-5bfa560c3a36
+:END:
+#+title: cobra-cli init
+#+date: [2023-12-28 Thu 10:44]
+#+startup: overview
+
+
+- create initial application code
+~cobra-cli init task~

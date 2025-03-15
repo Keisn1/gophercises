@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       ffd58ab4-dc6b-49e4-968b-19499fef6e52
+:END:
+#+title: Retrieving Token via Token
+#+date: [2023-12-18 Mon 19:27]
+#+startup: overview
+
+- returns independent data structure that completely describes the Token
+- entities are unescaped ("&lt")
+- tag names and attribute keys are lower-cased
+- attributes are collected into []Attribute

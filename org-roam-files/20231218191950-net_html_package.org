@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       f2558e5a-8276-46a1-9870-948cd70382ca
+:END:
+#+title: net/html package
+#+date: [2023-12-18 Mon 19:19]
+#+startup: overview
+
+https://pkg.go.dev/golang.org/x/net/html
+- provides HTML5 compliant Tokenizer and parser
+
+* [[id:a217f975-0585-4087-9380-d985db7688e9][html node type]]
+* [[id:4d8fbd27-0e08-4000-a20c-4fd3ea9fae2c][html tokenizer]]
+* [[id:42654313-1f67-4c02-ad04-17a1f7b67403][html parse]]

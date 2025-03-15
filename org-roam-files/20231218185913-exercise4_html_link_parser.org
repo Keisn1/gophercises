@@ -1,0 +1,34 @@
+:PROPERTIES:
+:ID:       49b4d522-25fd-48cf-bbd5-aa1e088037b0
+:END:
+#+title: exercise4 html link parser
+#+date: [2023-12-18 Mon 18:59]
+#+startup: overview
+
+- create a link parser
+- write a package that accepts html in some format
+https://github.com/gophercises/link
+
+* Goal
+- extract all of the links
+  - return Data struture for each link
+    - href
+    - text inside the tag
+* Notes
+- use net/html [[id:f2558e5a-8276-46a1-9870-948cd70382ca][net/html package]]
+- from golang.org
+  - provided by the go team
+  - not same garantuees as the standard library
+  - more flexible
+  - not possible to have them on the same release schedule as the stdlib
+- don't do the Tockenizer stuff
+  - do the parse thing
+- can ignore nested links
+- get something working before focusing on edge-cases
+  - don't worry about having perfect code
+- some examples are provided
+  - fourth example shall help you with comments
+
+* Hint: See [[https://pkg.go.dev/golang.org/x/net/html#NodeType][Node Type]] constants and look for the types that you can ignore
+* Bonus
+- improve your tests and edge case coverage

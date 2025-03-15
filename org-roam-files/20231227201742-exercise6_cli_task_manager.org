@@ -1,0 +1,32 @@
+:PROPERTIES:
+:ID:       65367aa4-7c2a-4c00-94c0-acc423e1b500
+:END:
+#+title: exercise6 cli task manager
+#+date: [2023-12-27 Wed 20:17]
+#+startup: overview
+
+- build binaries for different operating systems (cool because you can just run the binaries)
+  - you would not need to have go installed
+- stored in boltDb
+https://github.com/gophercises/task
+
+* Task
+** ~task~
+- shows help menu
+** ~task add~
+- add task to task list
+** ~task do~
+- marks something as complete
+** ~task help~
+** ~task list~
+* Objectives
+** Learn about creating command line interfaces (CLIs)
+- let's use [[id:2efa2956-c786-4f68-a813-27bb0b077afd][cobra]]
+- other interesting
+  https://github.com/avelino/awesome-go?tab=readme-ov-file#command-line
+** Interact with a database.
+- We will be using BoltDB in this exercise so we can learn about it.
+- [[id:814c5bea-0783-4e38-98b6-62b8d7aad5b9][Bolt db]]
+** Figure out how to store our database file on different operating systems. This will basically boil down to learning about home directories.
+** Exit codes (briefly)
+** And probably more. I'll update this list once the exercise is done.

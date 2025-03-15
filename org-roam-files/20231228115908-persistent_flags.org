@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       01c85223-ef70-4e59-a4ad-6d546a6d0d57
+:END:
+#+title: Persistent Flags
+#+date: [2023-12-28 Thu 11:59]
+#+startup: overview
+
+flag is available to command that it has been assigned to, as well as any subcommand under that command
+* for global flags
+~rootCmd.PersistentFlags().BoolVarP(&Verbose, "verbose", "v", false, "verbose output")~

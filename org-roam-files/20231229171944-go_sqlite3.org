@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       c5705a16-b889-4cfa-a1fe-2a99a570efb2
+:END:
+#+title: go-sqlite3
+#+date: [2023-12-29 Fri 17:19]
+#+startup: overview
+
+https://github.com/mattn/go-sqlite3
+https://pkg.go.dev/github.com/mattn/go-sqlite3
+https://github.com/mattn/go-sqlite3/tree/v1.14.19/_example
+~go get github.com/mattn/go-sqlite3~
+

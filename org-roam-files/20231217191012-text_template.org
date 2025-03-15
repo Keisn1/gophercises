@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       062808bc-a2f0-49c9-a5b3-9be9953284fc
+:END:
+#+title: text/template
+#+date: [2023-12-17 Sun 19:10]
+#+startup: overview
+
+https://pkg.go.dev/text/template

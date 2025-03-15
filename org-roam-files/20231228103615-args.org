@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       06ee9618-b921-4595-8f2e-0210abfa0c68
+:END:
+#+title: Args
+#+date: [2023-12-28 Thu 10:36]
+#+startup: overview
+
+represent things
+[[https://github.com/spf13/cobra/blob/main/site/content/user_guide.md#positional-and-custom-arguments][positional and custom arguments]]
+- if undefined or nil, ~Args~ defaults to ~Arbitrary Args~
+* [[id:b153be6f-45f6-45d6-8029-5e62ae2d32dd][Built-in validators]]

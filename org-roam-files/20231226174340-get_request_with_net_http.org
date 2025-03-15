@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       4037c1d6-f49d-4952-8bcd-d1c6518d0aff
+:END:
+#+title: GET request with net/http
+#+date: [2023-12-26 Tue 17:43]
+#+startup: overview
+
+https://pkg.go.dev/net/http
+#+begin_src go :results output :imports "fmt"
+resp, err := http.get("http://example.com")
+#+end_src

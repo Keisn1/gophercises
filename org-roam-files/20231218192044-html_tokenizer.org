@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       4d8fbd27-0e08-4000-a20c-4fd3ea9fae2c
+:END:
+#+title: html tokenizer
+#+date: [2023-12-18 Mon 19:20]
+#+startup: overview
+
+HTML is tokenized by repeatedly calling z.Next()
+- parses next token and returns its type or an error
+
+#+begin_src go :results output :imports "fmt"
+for {
+	tt := z.Next()
+	if tt == html.ErrorToken {
+		// ...
+		return ...
+	}
+	// Process the current token.
+}
+#+end_src
+
+* [[id:5811ff30-82d0-4e56-b380-1e41bea694d6][Retrieving the token (html)]]

@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       9a1cee9d-3dd0-49ec-9633-34fdd0c67e17
+:END:
+#+title: Exercise3 choose your own adventure
+#+date: [2023-12-16 Sat 19:54]
+#+startup: overview
+
+- choose what the character is doing, non-sequential
+- stories provided via a JSON file [[file:~/workspace/gophercises/choose-your-own-adventure/gopher.json::{][Gopher.json]]
+
+* Entities
+** arcname (dynamic)
+- changing
+** StoryArc object
+*** story []string
+*** options (other map)
+* Need to use
+** [[id:a207d7e5-f1e3-404f-b1b5-709f1e3b160c][html/template package]]
+
+** Create an [[id:96672e90-b26a-4664-b7b8-9f75bc52639e][http handler]] to handle the web requests instead of a handler function
+** [[id:44880019-f307-4ab8-9f4c-2c9b00c19626][Json decoding]] Use encodding json to decode the JSON file
+[[id:44880019-f307-4ab8-9f4c-2c9b00c19626][Json decoding]]
+* Worth noting
+- stories can be cyclical
+- all stories have a story arc named "intro"
+  - every json file has value 'intro'
+- Json-To-Go tool  https://mholt.github.io/json-to-go/
+* Bonus
+- make a command line application with that
+- What happens if not all stories start on an arc named 'intro'
+  - how to redesign/restructure the JSON

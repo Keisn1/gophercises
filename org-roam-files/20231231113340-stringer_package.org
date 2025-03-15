@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       50ad9df9-711e-4eb8-9fcc-2800f60a5e95
+:END:
+#+title: stringer package
+#+date: [2023-12-31 Sun 11:33]
+#+startup: overview
+
+https://pkg.go.dev/golang.org/x/tools/cmd/stringer

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       7220a00f-cf2f-4fc2-a9b9-099d9790c221
+:END:
+#+title: MapHandler
+#+date: [2023-12-16 Sat 10:40]
+#+startup: overview
+
+#+begin_src go :results output :imports "fmt"
+func MapHandler(pathsToUrls map[string]string, fallback http.Handler) http.HandlerFunc {
+#+end_src
+shall return [[id:638bb69a-54d3-461a-8c38-d79b0cc46bd2][http HandlerFunc]]

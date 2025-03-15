@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       326e369e-df62-4a90-bdd8-88c4f3722176
+:END:
+#+title: Flags
+#+date: [2023-12-28 Thu 10:36]
+#+startup: overview
+
+- modifiers of behavior
+- fully POSIX-compliant flags
+- supports Flag package https://pkg.go.dev/flag
+[[id:c167486b-a6f6-49ef-b8cf-4de87a893c07][Working with flags]]

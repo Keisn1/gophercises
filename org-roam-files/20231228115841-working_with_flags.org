@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       c167486b-a6f6-49ef-b8cf-4de87a893c07
+:END:
+#+title: Working with flags
+#+date: [2023-12-28 Thu 11:58]
+#+startup: overview
+
+https://github.com/spf13/cobra/blob/main/site/content/user_guide.md#working-with-flags
+- flags are optional by default
+  - [[https://github.com/spf13/cobra/blob/main/site/content/user_guide.md#required-flags][Required flags]]
+* [[id:01c85223-ef70-4e59-a4ad-6d546a6d0d57][Persistent Flags]]
+* [[id:dd61e3a1-f6a8-4c72-ae94-e5eb67e58b4e][Local flags]]
+* [[id:087de7f3-b464-4ab3-a51a-782740e7df33][Flag groups]]

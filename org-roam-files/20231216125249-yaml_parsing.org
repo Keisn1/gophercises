@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       adbd7437-b15a-42ec-ad4a-2a27e74686e8
+:END:
+#+title: Yaml parsing
+#+date: [2023-12-16 Sat 12:52]
+#+startup: overview
+
+https://pkg.go.dev/gopkg.in/yaml.v2#readme-example
+
+* Examples
+** Example1
+#+begin_src go :results output :imports "fmt"
+
+type PathAndUrl struct {
+	Path string
+	Url  string
+}
+
+func parseYaml(yml []byte) ([]PathAndUrl, error) {
+	var pathsAndUrls []PathAndUrl
+	err := yaml.Unmarshal([]byte(yml), &pathsAndUrls)
+	if err != nil {
+		log.Fatal(err)
+	}
+	return pathsAndUrls, nil
+}
+
+#+end_src

@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       1f600000-da73-4929-90aa-4b4f08ab4290
+:END:
+#+title: Cobra cli generator
+#+date: [2023-12-28 Thu 10:43]
+#+startup: overview
+
+https://github.com/spf13/cobra-cli/blob/main/README.md
+- creates application and commands you want
+* Installation
+- go install github.com/spf13/cobra-cli@latest
+* [[id:73eca31f-23fd-4592-bd55-5bfa560c3a36][cobra-cli init]]

@@ -1,0 +1,47 @@
+:PROPERTIES:
+:ID:       8c53aac3-a292-4e53-8e03-421db6621c1d
+:END:
+#+title: exercise8 deck of cards
+#+date: [2023-12-31 Sun 11:29]
+#+startup: overview
+
+* Objectives
+- build a package that can used to create a deck of cards
+
+* Tips
+- maybe work a little bit on the next exercise before completing, so to have a grasp for the API
+
+* topics
+** Sorting - [[id:1e239c65-143e-41ba-8d3a-71326aa90f5e][sort package]]
+** Shuffling (permutations) -  [[id:05724c68-6c57-416a-905d-a3e9d16c2565][math/rand]]
+** [[id:2551fdad-d45d-4e74-8043-98442879e3cf][Go generate]] - with [[id:50ad9df9-711e-4eb8-9fcc-2800f60a5e95][stringer package]]
+** [[id:daf7becc-2765-4bdb-8596-46479f522744][Functional Options]] - [[id:ffb519d1-06e3-44c5-a187-00dc75c0fc68][Functional options with go]]
+** constants
+** iota
+
+* What to do
+
+** Create a package called 'deck'
+*** Create a type named exported Card
+- no game specific logic to the Card type
+- focus on attributes that are true to the card no matter the game
+- maybe add something else that you deem useful
+  - compare? - but generic compare (just an interface?)
+
+** Add a 'New' function
+- generates a deck of cards []Card
+*** order
+- ordered first by suit
+- then by rank (A, 1, 2 ... K)
+
+** Add options to be used
+- sort cards with user-defined comparison function
+- default comparison function
+- shuffle the cards
+- add arbitrary numbers of jokers to the deck
+- filter out specific cards
+- construct a single deck out of multiple decks
+  - e.g. in blackjack, build a deck of cards out of e.g. 3 standard decks
+
+* Bonus
+** comment the code and look how to run a local godoc server

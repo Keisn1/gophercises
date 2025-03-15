@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       55d210bb-b11e-4193-a500-263a65dc6343
+:END:
+#+title: http HandleFunc function
+#+date: [2023-12-16 Sat 10:42]
+#+startup: overview
+
+https://pkg.go.dev/net/http#HandleFunc
+registers functions to endpoints
+#+begin_src go :results output :imports "fmt"
+package main
+
+import (
+	"io"
+	"log"
+	"net/http"
+)
+
+func main() {
+	h1 := func(w http.ResponseWriter, _ *http.Request) {
+		io.WriteString(w, "Hello from a HandleFunc #1!\n")
+	}
+	h2 := func(w http.ResponseWriter, _ *http.Request) {
+		io.WriteString(w, "Hello from a HandleFunc #2!\n")
+	}
+
+	http.HandleFunc("/", h1)
+	http.HandleFunc("/endpoint", h2)
+	log.Fatal(http.ListenAndServe(":8080", nil))
+}
+#+end_src

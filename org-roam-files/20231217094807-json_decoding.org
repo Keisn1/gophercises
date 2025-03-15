@@ -1,0 +1,79 @@
+:PROPERTIES:
+:ID:       44880019-f307-4ab8-9f4c-2c9b00c19626
+:END:
+#+title: Json decoding
+#+date: [2023-12-17 Sun 09:48]
+#+startup: overview
+* Examples
+** Example1 Urlshortener
+#+begin_src go :results output :imports "fmt"
+type PathAndUrl struct {
+	Path string
+	Url  string
+}
+func parseJSON(jsn []byte) ([]PathAndUrl, error) {
+	var pathsAndUrls []PathAndUrl
+	err := json.Unmarshal(jsn, &pathsAndUrls)
+	if err != nil {
+		log.Fatal(err)
+	}
+	return pathsAndUrls, nil
+}
+#+end_src
+#+begin_src json
+[
+    {
+        "path": "/urlshort",
+        "url": "https://github.com/gophercises/urlshort"
+    },
+    {
+        "path": "/urlshort-final",
+        "url": "https://github.com/gophercises/urlshort"
+    }
+]
+#+end_src
+** Example2 Choose-your-own-adventure
+#+begin_src go :results output :imports "fmt"
+type Story map[string]Chapter
+
+type Chapter struct {
+	Title      string   `json:"title"`
+	Paragraphs []string `json:"story"`
+	Options    []Option `json:"options"`
+}
+
+type Option struct {
+	Text string `json:"text"`
+	Arc  string `json:"arc"`
+}
+#+end_src
+*** Unmarshalling
+#+begin_src go :results output :imports "fmt"
+file := "gopher.json"
+content := readFile(file)
+
+var story Story
+err := json.Unmarshal(content, &story)
+if err != nil {
+	log.Fatal(err)
+}
+
+fmt.Println(story)
+#+end_src
+*** Decoding
+#+begin_src go :results output :imports "fmt"
+
+file := "gopher.json"
+f, err := os.Open(file)
+if err != nil {
+	log.Fatal(err)
+}
+defer f.Close()
+
+decoder := json.NewDecoder(f)
+err = decoder.Decode(&story)
+if err != nil {
+        log.Fatal(err)
+}
+
+#+end_src

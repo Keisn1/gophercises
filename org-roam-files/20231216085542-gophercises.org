@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       99881896-3009-4c4e-b795-d8917bf4a705
+:END:
+#+title: gophercises
+#+date: [2023-12-16 Sat 08:55]
+#+startup: overview

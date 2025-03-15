@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       dc548b9f-2850-449a-aa96-cab6f2ba891a
+:END:
+#+title: Cobra user guide
+#+date: [2023-12-28 Thu 11:29]
+#+startup: overview
+
+https://github.com/spf13/cobra/blob/main/site/content/user_guide.md#using-the-cobra-library
+* [[id:c167486b-a6f6-49ef-b8cf-4de87a893c07][Working with flags]]
+* [[id:06ee9618-b921-4595-8f2e-0210abfa0c68][Args]]

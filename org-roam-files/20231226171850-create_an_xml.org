@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       ea8ff2ba-dc48-4521-8732-bc0a048b0ed1
+:END:
+#+title: create an xml
+#+date: [2023-12-26 Tue 17:18]
+#+startup: overview
+
+- https://pkg.go.dev/encoding/xml
+
+#+begin_src xml
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://www.example.com/</loc>
+  </url>
+  <url>
+    <loc>http://www.example.com/dogs</loc>
+  </url>
+</urlset>
+#+end_src
